@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Col, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
-import { SavePaymentMethod } from "../actions/cartActions";
+import { savePaymentMethod } from "../actions/cartActions";
 import CheckoutSteps from "../components/CheckoutSteps";
 
 const PaymentScreens = ({ history }) => {
@@ -19,7 +19,7 @@ const PaymentScreens = ({ history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(SavePaymentMethod(paymentMethod));
+    dispatch(savePaymentMethod(paymentMethod));
     history.push("/placeorder");
   };
   return (
@@ -33,13 +33,13 @@ const PaymentScreens = ({ history }) => {
           <Col>
             <Form.Check
               type="radio"
-              label="Paypal or Credit Card"
+              label="PayPal or Credit Card"
               id="PayPal"
               name="paymentMethod"
               value="PayPal"
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
-            ></Form.Check>
+            />
 
             <Form.Check
               type="radio"
@@ -48,7 +48,7 @@ const PaymentScreens = ({ history }) => {
               name="paymentMethod"
               value="Stripe"
               onChange={(e) => setPaymentMethod(e.target.value)}
-            ></Form.Check>
+            />
           </Col>
         </Form.Group>
         <Button type="submit" variant="primary">

@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/layouts/Header";
@@ -11,6 +12,8 @@ import RegisterScreens from "./screens/RegisterScreens";
 import ProfileScreens from "./screens/ProfileScreens";
 import ShippingScreen from "./screens/ShippingScreen";
 import PaymentScreens from "./screens/PaymentScreens";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import OrderScreen from "./screens/OrderScreen";
 
 function App() {
   return (
@@ -26,6 +29,8 @@ function App() {
           <Route path="/profile" component={ProfileScreens} />
           <Route path="/shipping" component={ShippingScreen} />
           <Route path="/payment" component={PaymentScreens} />
+          <Route path="/placeorder" component={PlaceOrderScreen} />
+          <Route path="/order/:id" component={OrderScreen} />
         </Container>
       </main>
       <Footer />

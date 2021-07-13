@@ -3,7 +3,10 @@
     <words>
       <w>asynchandler</w>
       <w>axios</w>
+      <w>dotenv</w>
+      <w>myorders</w>
       <w>navbar</w>
+      <w>paypal</w>
       <w>placeorder</w>
       <w>proshop</w>
     </words>
