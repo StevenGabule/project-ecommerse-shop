@@ -1,14 +1,18 @@
 <component name="ProjectDictionaryState">
   <dictionary name="John paul">
     <words>
+      <w>adminmenu</w>
       <w>asynchandler</w>
       <w>axios</w>
       <w>dotenv</w>
       <w>myorders</w>
       <w>navbar</w>
+      <w>orderlist</w>
       <w>paypal</w>
       <w>placeorder</w>
+      <w>productlist</w>
       <w>proshop</w>
+      <w>userlist</w>
     </words>
   </dictionary>
 </component>
