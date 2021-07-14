@@ -14,7 +14,7 @@ const Rating = ({ value, text, color }) => {
               ? "fas fa-star-half-alt"
               : "far-fa-star"
           }
-        ></i>
+        />
       </span>
       <span>
         <i
@@ -26,7 +26,7 @@ const Rating = ({ value, text, color }) => {
               ? "fas fa-star-half-alt"
               : "far-fa-star"
           }
-        ></i>
+        />
       </span>
       <span>
         <i
@@ -38,7 +38,7 @@ const Rating = ({ value, text, color }) => {
               ? "fas fa-star-half-alt"
               : "far-fa-star"
           }
-        ></i>
+        />
       </span>
       <span>
         <i
@@ -50,7 +50,7 @@ const Rating = ({ value, text, color }) => {
               ? "fas fa-star-half-alt"
               : "far-fa-star"
           }
-        ></i>
+        />
       </span>
       <span>
         <i
@@ -62,7 +62,7 @@ const Rating = ({ value, text, color }) => {
               ? "fas fa-star-half-alt"
               : "far-fa-star"
           }
-        ></i>
+        />
       </span>
       <span>{text && text}</span> reviews
     </div>
@@ -71,6 +71,8 @@ const Rating = ({ value, text, color }) => {
 
 Rating.defaultProps = {
   color: "#f8e825",
+  value: 0,
+  text: "",
 };
 
 Rating.propTypes = {
