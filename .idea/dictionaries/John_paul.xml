@@ -5,6 +5,7 @@
       <w>asynchandler</w>
       <w>axios</w>
       <w>dotenv</w>
+      <w>multer</w>
       <w>myorders</w>
       <w>navbar</w>
       <w>orderlist</w>
